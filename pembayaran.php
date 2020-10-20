@@ -106,10 +106,10 @@ if (isset($_POST["bayar"])){
         <th>Total Bayar</th>
       </tr>
      <?php
-      $host ='localhost';
-      $user = 'root';
-      $password ='';
-      $database ='laptop_bekas';//toko sepatu
+       $host ='db4free.net';
+      $user = 'laptop_bekas';
+      $password ='.GLnvd3yZa89k.u';
+      $database ='laptop_bekas';
       $i=1;     
       $link = mysqli_connect($host,$user,$password,$database);
       $query="SELECT *FROM barang";
