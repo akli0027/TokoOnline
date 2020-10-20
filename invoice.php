@@ -42,7 +42,7 @@
                         <div class="row">
                             <div class="col-xs-12">
                                 <h2 class="page-header">
-                                    <i class="fa fa-globe"></i> Toko Sepatu Online
+                                    <i class="fa fa-globe"></i> Toko Online
                                     <small class="pull-right"><?= date('d-m-Y H:i:s');?></small>
                                 </h2>
                             </div><!-- /.col -->
