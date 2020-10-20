@@ -1,6 +1,6 @@
 <?php
 session_start();
-$connect = mysqli_connect('localhost', 'root', '', 'laptop_bekas');
+$connect = mysqli_connect('db4free.net','laptop_bekas','.GLnvd3yZa89k.u','laptop_bekas');
 $nama = $_POST['nama'];
 $harga= $_POST['harga'];
 $ukuran= $_POST['ukuran'];

@@ -10,7 +10,7 @@
       <div class="jumbotron">
       <h1>Edit Barang</h1>
        <?php 
-        $connect = mysqli_connect('localhost', 'root', '', 'laptop_bekas');
+        $connect = mysqli_connect('db4free.net','laptop_bekas','.GLnvd3yZa89k.u','laptop_bekas');
         $kode_barang = $_GET['kode_barang'];
         $query = mysqli_query($connect, "SELECT *FROM barang WHERE kode_barang='$kode_barang'");
         $row = mysqli_fetch_array($query);

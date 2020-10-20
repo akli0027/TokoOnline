@@ -1,6 +1,6 @@
 <?php
 session_start();
-$connect = mysqli_connect('localhost','root','','laptop_bekas');
+$connect = mysqli_connect('db4free.net','laptop_bekas','.GLnvd3yZa89k.u','laptop_bekas');
 $email_admin = $_POST['email_admin'];
 $password_admin = $_POST['password_admin'];
 $query = mysqli_query($connect, "SELECT *FROM admin WHERE email_admin='$email_admin'");

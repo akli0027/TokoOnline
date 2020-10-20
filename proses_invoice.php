@@ -1,8 +1,8 @@
 <?php
     session_start();
-    $host ='localhost';
-    $user = 'root';
-    $password ='';
+    $host ='b4free.net';
+    $user = 'laptop_bekas';
+    $password ='.GLnvd3yZa89k.u';
     $id_pembeli= $_SESSION['id_pembeli'];
     $database ='laptop_bekas';
     $link = mysqli_connect($host,$user,$password,$database);

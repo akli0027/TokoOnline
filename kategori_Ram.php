@@ -116,10 +116,11 @@ StartShop has everything you need to get your new items and not have to worry ab
       <th scope="col">Pilih barang</th>
     </tr>
     <?php
-    $host ='localhost';
-    $user = 'root';
-    $password ='';
+    $host ='db4free.net';
+    $user = 'laptop_bekas';
+    $password ='.GLnvd3yZa89k.u';
     $database ='laptop_bekas';
+     
     $i=1;
     $j=0;
     $link = mysqli_connect($host,$user,$password,$database);

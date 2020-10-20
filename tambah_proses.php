@@ -1,5 +1,5 @@
 <?php
-$connect = mysqli_connect('localhost', 'root', '', 'laptop_bekas');
+$connect = mysqli_connect('db4free.net','laptop_bekas','.GLnvd3yZa89k.u','laptop_bekas');
 $id_pemasok = $_POST['id_pemasok'];
 $nama = $_POST['nama'];
 $no_telepon = $_POST['no_telepon'];
