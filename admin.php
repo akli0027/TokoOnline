@@ -34,7 +34,7 @@
 					<a href="edit_proses_admin.php?id_admin=<?=$row['id_admin']?>"> 
 					<button class="btn btn-primary">Edit</button>
 					</a>
-					<a href="hapus_admin.php?id_pembeli=<?=$row['id_admin']?>">
+					<a href="hapus_admin.php?id_admin=<?=$row['id_admin']?>">
 					<button class="btn btn-danger">Hapus</button>
 					</a>
 				</td>
