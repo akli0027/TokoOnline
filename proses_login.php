@@ -8,7 +8,7 @@ $row= mysqli_fetch_object ($query);
 
 	if ($row->email==$email){
 		if($row->password==$password){
-			$_SESSION['id_pembeli']=$row->id_pembeli;
+			$_SESSION['id_pembeli']=$id_pembeli;
 			header('location: home.php');
 		}
 		else {
