@@ -14,10 +14,10 @@
     </div>
     <?php
     session_start();
-      $host ='localhost';
-      $user = 'root';
-      $password ='';
-      $database ='laptop_bekas';
+       $host ='db4free.net';
+    $user = 'laptop_bekas';
+    $password ='.GLnvd3yZa89k.u';
+    $database ='laptop_bekas';
       $i=0;    
       $id_pembeli=$_SESSION['id_pembeli']; 
       $link = mysqli_connect($host,$user,$password,$database);

@@ -1,6 +1,6 @@
 <?php
 session_start();
-$connect = mysqli_connect('localhost','root','','laptop_bekas');
+$connect = mysqli_connect('db4free.net','laptop_bekas','.GLnvd3yZa89k.u','laptop_bekas');
 $email = $_POST['email'];
 $password = $_POST['password'];
 $query = mysqli_query($connect, "SELECT *FROM pembeli WHERE email='$email'");
