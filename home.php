@@ -159,21 +159,20 @@ StartShop has everything you need to get your new items and not have to worry ab
  
 
   <!-- Footer -->
-  <footer class="footer">
+ <footer class="footer">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-4">
-          <span class="copyright">Copyright &copy; Your Website 2020</span>
+      <div class="row align-items-center"> 
         </div>
-        <div class="col-md-4">
-          <ul class="list-inline social-buttons">
+          <div class="col-md-4">
+          <ul class="list-inline quicklinks">
             <li class="list-inline-item">
-              <a href="https://www.instagram.com/muh_akliadnan">
-                <i class="fab fa-instagram"></i>
-              </a>
+              <a href="https://www.instagram.com/muh_akliadnan">Instagram</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://mobile.facebook.com/m.akli.9066?ref=bookmarks">Facebook </a>
             </li>
           </ul>
-         </div>
+        </div>
         <div class="col-md-4">
           <ul class="list-inline quicklinks">
             <li class="list-inline-item">
@@ -184,7 +183,6 @@ StartShop has everything you need to get your new items and not have to worry ab
             </li>
           </ul>
         </div>
-      </div>
     </div>
   </footer>
 
