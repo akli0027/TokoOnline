@@ -106,16 +106,11 @@ if (isset($_POST["bayar"])){
         <th>Total Bayar</th>
       </tr>
      <?php
-      $host ='localhost';
-      $user = 'root';
-      $password ='';
-      $database ='laptop_bekas';//toko sepatu
+       include 'koneksi.php';
       $i=1;     
-      $link = mysqli_connect($host,$user,$password,$database);
-      $query="SELECT *FROM barang";
-      $result = mysqli_query($link,$query);
+      $link = mysqli_query($connect,"SELECT *FROM barang");
       $j=0;
-      while ($tampung = mysqli_fetch_object($result)){
+      while ($tampung = mysqli_fetch_object($link)){
           $x = "pilihan$j";
           $j++;
           $isTouch = isset(${$x});

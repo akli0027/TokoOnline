@@ -113,16 +113,12 @@ StartShop has everything you need to get your new items and not have to worry ab
       <th scope="col">Pilih barang</th>
     </tr>
     <?php
-    $host ='db4free.net';
-    $user = 'laptop_bekas';
-    $password ='.GLnvd3yZa89k.u';
-    $database ='laptop_bekas';
+     include 'koneksi.php';
     $i=1;
     $j=0;
-    $link = mysqli_connect($host,$user,$password,$database);
-    $query="select *from barang where model='mouse'";
-    $result = mysqli_query($link,$query);
-    while ($tampung=mysqli_fetch_object($result)){
+    $link = mysqli_query($connect,"select *from barang where model='mouse'");
+
+    while ($tampung=mysqli_fetch_object($link)){
       ?>
   </thead>
   <tbody>

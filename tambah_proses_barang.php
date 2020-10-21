@@ -1,6 +1,6 @@
 <?php
 session_start();
-$connect = mysqli_connect('db4free.net','laptop_bekas','.GLnvd3yZa89k.u','laptop_bekas');
+ include 'koneksi.php';
 $nama = $_POST['nama'];
 $harga= $_POST['harga'];
 $ukuran= $_POST['ukuran'];
@@ -12,7 +12,7 @@ $gambar = $_FILES['gambar']['name'];
 $file_tmp = $_FILES['gambar']['tmp_name'];
 $id_pemasok = $_SESSION ['id_pemasok'];
 move_uploaded_file($file_tmp,'img/'.$gambar);
-   $query = mysqli_query($connect,"INSERT INTO barang VALUES ('','$nama','$harga','$ukuran','$merk','$model','$diskon','$warna','$gambar','$id_pemasok')");
+   $query = mysqli_query($connect,"INSERT INTO barang VALUES (NULL,'$nama','$harga','$ukuran','$merk','$model','$diskon','$warna','$gambar','$id_pemasok')");
     
     if ($query) {
        header('Location:tampil_barang.php');

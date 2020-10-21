@@ -14,28 +14,15 @@
     </div>
     <?php
     session_start();
-       $host ='db4free.net';
-    $user = 'laptop_bekas';
-    $password ='.GLnvd3yZa89k.u';
-    $database ='laptop_bekas';
+     include 'koneksi.php';
       $i=0;    
       $id_pembeli=$_SESSION['id_pembeli']; 
-      $link = mysqli_connect($host,$user,$password,$database);
+      $link = mysqli_connect($connect);
       $query="SELECT *FROM struk JOIN barang ON struk.kode_barang=barang.kode_barang JOIN pembeli ON struk.id_pembeli= pembeli.id_pembeli WHERE struk.id_pembeli='$id_pembeli'";
       $result = mysqli_query($link,$query);
       $row= mysqli_fetch_object($result);
 ?>
-    <!--<?php
-
-    include 'koneksi.php';
-
-    $id_pasien = $_POST['id_pasien'];
-
-
-    $jumlah = 0;
-    $query = mysqli_query($conn, "select * from pasien p join dokter d on d.sip=p.sip join rspobat r on r.id_pasien='$id_pasien' join obat o on r.id_obat=o.id_obat where p.id_pasien = '$id_pasien' ");
-
-    ?>-->
+   
     <center>
       <h1><b> TRANSAKSI </b></h1><br>
     </center>

@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Daftar Pemasok</title>
+	<title>Daftar Admin</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
 	<table class="table">
 		<tr>
-			<td>Id Pembeli</td>
+			<td>Id Admin</td>
 			<td>Nama</td>
-			<td>No Telepon</td>
-			<td>alamat</td>
-			<td>email</td>
 			<td>Password</td>
+			<td>email</td>
 			<td>
 				<a href="index.php">
 					<button class="btn btn-primary">Logout</button>
@@ -23,22 +21,20 @@
 			</td>
 		</tr>
 		<?php
-		$connect= mysqli_connect('db4free.net','laptop_bekas','.GLnvd3yZa89k.u','laptop_bekas');
-		$query = mysqli_query($connect,"SELECT *FROM pembeli");
+		include 'koneksi.php';
+		$query = mysqli_query($connect,"SELECT *FROM admin");
 		while($row=mysqli_fetch_array($query)){
 			?>
 			<tr>
-				<td><?=$row['id_pembeli']?></td>
-				<td><?=$row['nama']?></td>
-				<td><?=$row['no_telepon']?></td>
-				<td><?=$row['alamat']?></td>
-				<td><?=$row['email']?></td>
-				<td><?=$row['password']?></td>
+				<td><?=$row['id_admin']?></td>
+				<td><?=$row['nama_admin']?></td>
+				<td><?=$row['password_admin']?></td>
+				<td><?=$row['email_admin']?></td>
 				<td>
-					<a href="edit_pembeli.php?id_pembeli=<?=$row['id_pembeli']?>"> 
+					<a href="edit_admin.php?id_admin=<?=$row['id_admin']?>"> 
 					<button class="btn btn-primary">Edit</button>
 					</a>
-					<a href="hapus_pembeli.php?id_pembeli=<?=$row['id_pembeli']?>">
+					<a href="hapus_admin.php?id_admin=<?=$row['id_admin']?>">
 					<button class="btn btn-danger">Hapus</button>
 					</a>
 				</td>

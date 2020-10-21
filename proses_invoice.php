@@ -1,11 +1,7 @@
 <?php
     session_start();
-    $host ='b4free.net';
-    $user = 'laptop_bekas';
-    $password ='.GLnvd3yZa89k.u';
+     include 'koneksi.php';
     $id_pembeli= $_SESSION['id_pembeli'];
-    $database ='laptop_bekas';
-    $link = mysqli_connect($host,$user,$password,$database);
 
     if(isset($_POST['bayar'])){
         if(!empty($_POST['pilihan'])){
@@ -16,8 +12,7 @@
     }
     $banyak= count($data);
     for($i=0; $i<$banyak; $i++){
-        $query="INSERT INTO struk VALUES ('$id_pembeli','$data[$i]')";
-        $result = mysqli_query($link,$query);
+        $result= mysqli_query($connect,"INSERT INTO struk VALUES ('$id_pembeli','$data[$i]')");
     }
     header('Location: invoice.php');
 ?>

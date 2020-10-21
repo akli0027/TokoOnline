@@ -11,7 +11,7 @@
       <div class="jumbotron">
       <h1>Edit Admin</h1>
        <?php 
-        $connect = mysqli_connect('db4free.net','laptop_bekas','.GLnvd3yZa89k.u','laptop_bekas');
+        include 'koneksi.php';
         $id_admin = $_GET['id_admin'];
         $query = mysqli_query($connect, "SELECT *FROM admin WHERE id_admin='$id_admin'");
         $row = mysqli_fetch_array($query);
@@ -31,3 +31,4 @@
   </div>
 </body>
 </html>
+

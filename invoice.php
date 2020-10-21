@@ -1,15 +1,10 @@
 <?php
     session_start();
-       $host ='db4free.net';
-    $user = 'laptop_bekas';
-    $password ='.GLnvd3yZa89k.u';
-    $database ='laptop_bekas';
+     include 'koneksi.php';
       $i=0;    
       $id_pembeli=$_SESSION['id_pembeli']; 
-      $link = mysqli_connect($host,$user,$password,$database);
-      $query="SELECT *FROM struk JOIN barang ON struk.kode_barang=barang.kode_barang JOIN pembeli ON struk.id_pembeli= pembeli.id_pembeli WHERE struk.id_pembeli='$id_pembeli'";
-      $result = mysqli_query($link,$query);
-      $row= mysqli_fetch_object($result);
+      $link = mysqli_query($connect,"SELECT *FROM struk JOIN barang ON struk.kode_barang=barang.kode_barang JOIN pembeli ON struk.id_pembeli= pembeli.id_pembeli WHERE struk.id_pembeli='$id_pembeli'");
+      $row= mysqli_fetch_object($link);
 ?>
 <!DOCTYPE html>
 <html>
@@ -42,7 +37,7 @@
                         <div class="row">
                             <div class="col-xs-12">
                                 <h2 class="page-header">
-                                    <i class="fa fa-globe"></i> Toko Sepatu Online
+                                    <i class="fa fa-globe"></i> Toko Online
                                     <small class="pull-right"><?= date('d-m-Y H:i:s');?></small>
                                 </h2>
                             </div><!-- /.col -->
@@ -81,9 +76,9 @@
                                     <tbody> 
                                     <?php
                                     $totalsub=0;
-                                    $query2="SELECT *FROM struk JOIN barang ON struk.kode_barang=barang.kode_barang JOIN pembeli ON struk.id_pembeli= pembeli.id_pembeli WHERE struk.id_pembeli='$id_pembeli'";
-                                     $result2 = mysqli_query($link,$query2);
-                                    while($row2=mysqli_fetch_object($result2)){
+                                   $link2 = mysqli_query($connect,"SELECT *FROM struk JOIN barang ON struk.kode_barang=barang.kode_barang JOIN pembeli ON struk.id_pembeli= pembeli.id_pembeli WHERE struk.id_pembeli='$id_pembeli'");
+                            
+                                    while($row2=mysqli_fetch_object($link2)){
                                         ?>
                                         <tr>
                                             <td><?=$row2->nama_barang?></td>
