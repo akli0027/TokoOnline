@@ -107,6 +107,7 @@ if (isset($_POST["bayar"])){
       </tr>
      <?php
        include 'koneksi.php';
+
       $i=1;     
       $link = mysqli_query($connect,"SELECT *FROM barang");
       $j=0;

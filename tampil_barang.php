@@ -67,6 +67,7 @@ table td {
 		</tr>
 		<?php
 		  include 'koneksi.php';
+
 	    $i=1;
 	    $link = mysqli_query($connect,"select *from barang");
 	    while ($tampung=mysqli_fetch_object($link)){
