@@ -168,22 +168,11 @@ StartShop has everything you need to get your new items and not have to worry ab
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
-              <a href="https://twitter.com/Aklimuh">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://mobile.facebook.com/m.akli.9066?ref=bookmarks">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
               <a href="https://www.instagram.com/muh_akliadnan">
                 <i class="fab fa-instagram"></i>
               </a>
             </li>
           </ul>
-        </div>
         <div class="col-md-4">
           <ul class="list-inline quicklinks">
             <li class="list-inline-item">
