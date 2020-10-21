@@ -173,6 +173,7 @@ StartShop has everything you need to get your new items and not have to worry ab
               </a>
             </li>
           </ul>
+         </div>
         <div class="col-md-4">
           <ul class="list-inline quicklinks">
             <li class="list-inline-item">
