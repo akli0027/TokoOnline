@@ -1,5 +1,5 @@
 <?php
-$connect = mysqli_connect('db4free.net','laptop_bekas','.GLnvd3yZa89k.u','laptop_bekas');
+ include 'koneksi.php';
 $id_admin = $_POST['id_admin'];
 $nama_admin = $_POST['nama_admin'];
 $password_admin = $_POST['password_admin'];

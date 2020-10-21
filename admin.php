@@ -21,7 +21,9 @@
 			</td>
 		</tr>
 		<?php
-		$connect= mysqli_connect('db4free.net','laptop_bekas','.GLnvd3yZa89k.u','laptop_bekas');
+
+		include 'koneksi.php';
+
 		$query = mysqli_query($connect,"SELECT *FROM admin");
 		while($row=mysqli_fetch_array($query)){
 			?>
@@ -31,7 +33,8 @@
 				<td><?=$row['password_admin']?></td>
 				<td><?=$row['email_admin']?></td>
 				<td>
-					<a href="edit_proses_admin.php?id_admin=<?=$row['id_admin']?>"> 
+					<a href="edit_admin.php?id_admin=<?=$row['id_admin']?>"> 
+
 					<button class="btn btn-primary">Edit</button>
 					</a>
 					<a href="hapus_admin.php?id_admin=<?=$row['id_admin']?>">

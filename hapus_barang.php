@@ -1,5 +1,5 @@
 <?php
-    $connect = mysqli_connect('db4free.net','laptop_bekas','.GLnvd3yZa89k.u','laptop_bekas');
+     include 'koneksi.php';
 
     $kode_barang = $_GET['kode_barang'];
 

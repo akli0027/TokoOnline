@@ -66,15 +66,11 @@ table td {
 			</td>
 		</tr>
 		<?php
-		  $host ='db4free.net';
-    		  $user = 'laptop_bekas';
-    		  $password ='.GLnvd3yZa89k.u';
-    		  $database ='laptop_bekas';
+		  include 'koneksi.php';
+
 	    $i=1;
-	    $link = mysqli_connect($host,$user,$password,$database);
-	    $query="select *from barang";
-	    $result = mysqli_query($link,$query);
-	    while ($tampung=mysqli_fetch_object($result)){
+	    $link = mysqli_query($connect,"select *from barang");
+	    while ($tampung=mysqli_fetch_object($link)){
       ?>
  	 <tbody>
     <tr>

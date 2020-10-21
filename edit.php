@@ -11,7 +11,7 @@
       <div class="jumbotron">
       <h1>Edit Pemasok</h1>
        <?php 
-        $connect = mysqli_connect('db4free.net','laptop_bekas','.GLnvd3yZa89k.u','laptop_bekas');
+       include 'koneksi.php';
         $id_pemasok = $_GET['id_pemasok'];
         $query = mysqli_query($connect, "SELECT *FROM pemasok WHERE id_pemasok='$id_pemasok'");
         $row = mysqli_fetch_array($query);
