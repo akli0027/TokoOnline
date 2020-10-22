@@ -72,7 +72,7 @@ if (!isset($_SESSION['id_pembeli'])){
   </nav>
 
   <!-- Home Section -->
-  <section class="page-section bg-primary" id="home">
+ <section class="page-section bg-secondary" id="home">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
