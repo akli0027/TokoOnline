@@ -50,19 +50,23 @@ if (!isset($_SESSION['id_pembeli'])){
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#product">Product</a>
           </li>
-            <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Category
-        </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="kategori_Monitor.php">Monitor</a>
-            <a class="dropdown-item" href="kategori_Speaker.php">Speaker</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="Kategori_Mouse.php">Mouse</a>
-            <a class="dropdown-item" href="kategori_keyboard.php">Keyboard</a>
-             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="kategori_Ram.php">Ram</a>
-          </div>
+
+
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="kategori_Monitor.php">Monitor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="kategori_Speaker.php">Speaker</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="Kategori_Mouse.php">Mouse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="kategori_keyboard.php">Keyboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="kategori_Ram.php">Ram</a>
+          </li>
           </li>
            <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="proses_logout.php">Logout</a>
@@ -72,7 +76,7 @@ if (!isset($_SESSION['id_pembeli'])){
   </nav>
 
   <!-- Home Section -->
- <section class="page-section bg-secondary" id="home">
+  <section class="page-section bg-secondary" id="home">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
