@@ -38,50 +38,38 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="home.php">Home</a>
+            <a class="nav-link js-scroll-trigger" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#product">Product</a>
           </li>
-          <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Category
-        </a>
-           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="kategori_Monitor.php">Monitor</a>
-            <a class="dropdown-item" href="kategori_Speaker.php">Speaker</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="Kategori_Mouse.php">Mouse</a>
-            <a class="dropdown-item" href="kategori_keyboard.php">Keyboard</a>
-           <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="kategori_Ram.php">Ram</a>
-          </div>
+
+
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="kategori_Monitor.php">Monitor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="kategori_Speaker.php">Speaker</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="Kategori_Mouse.php">Mouse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="kategori_keyboard.php">Keyboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="kategori_Ram.php">Ram</a>
+          </li>
           </li>
            <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.php">Logout</a>
+            <a class="nav-link js-scroll-trigger" href="proses_logout.php">Logout</a>
           </li>
       </div>
     </div>
   </nav>
 
-    <!-- Masthead -->
-  <header class="masthead">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center justify-content-center text-center">
-        <div class="col-lg-10 align-self-end">
-          <h1 class="text-uppercase text-white font-weight-bold">
-YOUR FAVORITE ITEMS CAN LOOK HERE</h1>
-          <hr class="divider my-4">
-        </div>
-        <div class="col-lg-8 align-self-baseline">
-          <p class="text-white-75 font-weight-light mb-5">Let's see and find yours</p>
-        </div>
-      </div>
-    </div>
-  </header>
-
   <!-- Home Section -->
-  <section class="page-section bg-primary" id="home">
+  <section class="page-section bg-secondary" id="home">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
