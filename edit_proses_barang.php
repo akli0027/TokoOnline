@@ -16,6 +16,6 @@
    if ($query) {
        header('Location: tampil_barang_pemasok.php');
    } else {
-       header('Location: edit.php');
+       header('Location: edit_barang.php');
    }
 ?>
