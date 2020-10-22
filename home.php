@@ -50,19 +50,20 @@ if (!isset($_SESSION['id_pembeli'])){
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#product">Product</a>
           </li>
-          <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Category
-        </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="kategori_Monitor.php">Monitor</a>
+                <div class="dropdown">
+         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Category
+         </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="kategori_Monitor.php">Monitor</a>
             <a class="dropdown-item" href="kategori_Speaker.php">Speaker</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="Kategori_Mouse.php">Mouse</a>
             <a class="dropdown-item" href="kategori_keyboard.php">Keyboard</a>
              <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="kategori_Ram.php">Ram</a>
-          </div>
+       </div>
+        </div>
           </li>
            <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="proses_logout.php">Logout</a>
