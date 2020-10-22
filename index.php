@@ -56,42 +56,14 @@
 
   <!--                    data batass css      -->
 </head>
-
 <body id="page-top">
-
-  <!-- untuk login -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#data">Click</a>
-    </div>
-  </nav>
-
-  <!-- Masthead -->
-  <header class="masthead h-100">       
-    <div class="container h-100 p-t-65">
-    
-                <div class="slide1"></div>
-                  <div class="slide2"></div>
-                    <div class="slide3"></div>
-                      <div class="slide4"></div>
-              
-      <div class="row h-100 align-items-center justify-content-center">
-        <div class="col-lg-10 align-self-end">
-           <div id="runningtext">
-              <marquee behavior="scroll" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();" direction="left">
-              Selamat Datang di Website Jual Sperpart laptop Bekas (By ----- AKLI )
-              </marquee>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  
-  <!-- Product Section -->
-  
   <section id="data">
    <div class="limiter">
+    <div id="runningtext">
+              <marquee behavior="scroll" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();" direction="left">
+              Selamat Datang di Website Jual Sperpart laptop Bekas
+              </marquee>
+          </div>
     <div class="container-login100">
       <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
         <form class="login100-form validate-form" method="POST" action="proses_login.php">
@@ -141,7 +113,7 @@
   </div>
   
   </section>
- 
+
 
 
   <!-- Bootstrap core JavaScript -->
