@@ -59,7 +59,7 @@ if (!isset($_SESSION['id_pembeli'])){
             <a class="nav-link js-scroll-trigger" href="kategori_Speaker.php">Speaker</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="Kategori_Mouse.php">Mouse</a>
+            <a class="nav-link js-scroll-trigger" href="kategori_Mouse.php">Mouse</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="kategori_keyboard.php">Keyboard</a>
