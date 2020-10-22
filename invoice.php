@@ -38,7 +38,8 @@
                             <div class="col-xs-12">
                                 <h2 class="page-header">
                                     <i class="fa fa-globe"></i> Toko Online
-                                    <small class="pull-right"><?= date('d-m-Y H:i:s');?></small>
+                                      <?php date_default_timezone_set("Asia/Jakarta");  ?>
+                                    <small class="pull-right"><?= date('m/d/Y h:i:s a');?></small>
                                 </h2>
                             </div><!-- /.col -->
                         </div>
