@@ -42,8 +42,6 @@
             </a>
           <h1>Tambah Admin</h1>
           <form action="tambah_admin.php" method="POST" enctype="multipart/form-data">
-            <label>Id Pemasok</label><br>
-            <input class="form-control col-sm-3" type="text" name="id_admin" placeholder="id_admin" >
             <label>Nama</label><br>
             <input class="form-control col-sm-3" type="text" name="nama_admin" placeholder="nama" >
             <label>Password</label>
