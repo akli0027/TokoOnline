@@ -85,7 +85,7 @@ table td {
       <td><?=$tampung->model?></td>
       <td><?=$tampung->diskon?></td>
       <td><?=$tampung->warna?></td>
-      <td><img src="<?="img/".$tampung->gambar?>" alt="Sepatu" width="100"></td>
+      <td><img src="<?="img/".$tampung->gambar?>" alt="Data" width="100"></td>
     </tr>
     <?php
   	}
