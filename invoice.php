@@ -118,7 +118,7 @@
                         <!-- this row will not appear when printing -->
                         <div class="row no-print">
                             <div class="col-xs-12">
-                                <a href="print.php"  target="_BLANK" class="btn btn-default"><i class="fa fa-print"></i> Print</a>
+                                <a href="print.php" class="btn btn-default"><i class="fa fa-print"></i> Print</a>
                             </div>
                         </div>
                         
