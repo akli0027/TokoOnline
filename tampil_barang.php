@@ -86,6 +86,10 @@ table td {
       <td><?=$tampung->diskon?></td>
       <td><?=$tampung->warna?></td>
       <td><img src="<?="img/".$tampung->gambar?>" alt="Data" width="100"></td>
+      <td>
+          <a href="edit_barang_pemasok.php?kode_barang=<?=$tampung->kode_barang?>" class="btn btn-primary">Edit</a>
+          <a href="hapus_barang_pemasok.php?kode_barang=<?=$tampung->kode_barang?>" class="btn btn-danger">Delete</a>
+      </td> 
     </tr>
     <?php
   	}
