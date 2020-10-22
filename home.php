@@ -45,7 +45,7 @@ if (!isset($_SESSION['id_pembeli'])){
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+            <a class="nav-link js-scroll-trigger" href="home.php">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#product">Product</a>
