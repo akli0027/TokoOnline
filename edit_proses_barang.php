@@ -1,5 +1,5 @@
 <?php
-   session_start();
+
    include 'koneksi.php';
    $kode_barang = $_GET['kode_barang'];
    $nama_barang = $_POST['nama_barang'];
@@ -9,9 +9,9 @@
    $model = $_POST['model'];
    $diskon = $_POST['diskon'];
    $warna = $_POST['warna'];
-   $id_pemasok = $_SESSION['id_pemasok'];
+ 
 
-   $query = mysqli_query($connect, "UPDATE barang SET id_pemasok='$id_pemasok', nama_barang='$nama_barang', harga='$harga', ukuran='$ukuran', merk='$merk', model='$model', diskon='$diskon', warna='$warna' WHERE kode_barang='$kode_barang'");
+   $query = mysqli_query($connect, "UPDATE barang SET  nama_barang='$nama_barang', harga='$harga', ukuran='$ukuran', merk='$merk', model='$model', diskon='$diskon', warna='$warna' WHERE kode_barang='$kode_barang'");
     
    if ($query) {
        header('Location: tampil_barang_pemasok.php');
