@@ -37,7 +37,7 @@
              <a href="admin.php">
                <button class="btn btn-primary">Lihat Admin</button>
             </a>
-             <a href="lihat_barang.php">
+             <a href="tampil_barang_pemasok.php">
                <button class="btn btn-primary">Lihat Barang Pemasok</button>
             </a>
           <h1>Tambah Admin</h1>
