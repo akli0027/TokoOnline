@@ -6,6 +6,6 @@
     $query = mysqli_query($connect, "DELETE FROM barang WHERE kode_barang='$kode_barang'");
 
     if ($query) {
-        header('Location: tampil_barang.php');
+        header('Location: tampil_barang_pemasok.php');
     }
 ?>
