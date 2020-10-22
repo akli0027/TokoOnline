@@ -15,7 +15,7 @@
    $query = mysqli_query($connect, "UPDATE barang SET id_pemasok='$id_pemasok', nama_barang='$nama_barang', harga='$harga', ukuran='$ukuran', merk='$merk', model='$model', diskon='$diskon', warna='$warna' WHERE kode_barang='$kode_barang'");
     
    if ($query) {
-       header('Location: tampil_barang.php');
+       header('Location: tampil_barang_pemasok.php');
    } else {
        header('Location: edit.php');
    }
