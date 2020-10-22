@@ -24,8 +24,15 @@
             <input class="form-control col-sm-3" type="text" name="ukuran" value="<?= $row['ukuran'] ?>" >
             <label>Merk</label><br>
             <input class="form-control col-sm-3" type="text" name="merk" value="<?= $row['merk'] ?>" >
-            <label>Model</label><br>
-            <input class="form-control col-sm-3" type="text" name="model" value="<?= $row['model'] ?>" >
+            <label>Model</label>
+            <select class="form-control col-sm-3" placeholder="Model" name="model">
+              <option selected hidden value="">Pilih Model</option>
+              <option value="mouse">Mouse</option>
+              <option value="monitor">Monitor</option>
+              <option value="keyboard">Keyboard</option> 
+               <option value="ram">Ram</option> 
+                <option value="speaker">Speaker</option> 
+            </select>
             <label>Diskon</label><br>
             <input class="form-control col-sm-3" type="text" name="diskon" value="<?= $row['diskon'] ?>" >
              <label>Warna</label><br>
