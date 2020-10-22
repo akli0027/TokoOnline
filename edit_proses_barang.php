@@ -3,7 +3,6 @@
    include 'koneksi.php';
    $kode_barang = $_GET['kode_barang'];
    $nama_barang = $_POST['nama_barang'];
-   // $stok = $_POST['stok'];
    $harga = $_POST['harga'];
    $ukuran = $_POST['ukuran'];
    $merk = $_POST['merk'];
