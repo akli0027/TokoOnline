@@ -65,12 +65,14 @@ table td {
 			
 			</td>
 		</tr>
-		<?php
+	<?php
+    session_start();
 		  include 'koneksi.php';
-
 	    $i=1;
-	    $link = mysqli_query($connect,"select *from barang");
-	    while ($tampung=mysqli_fetch_object($link)){
+       $id_pemasok=$_SESSION['id_pemasok']; 
+	    $link = mysqli_query($connect,"SELECT * FROM barang WHERE
+       barang.id_pemasok='$id_pemasok'");  
+      	    while ($tampung=mysqli_fetch_object($link)){
       ?>
  	 <tbody>
     <tr>
