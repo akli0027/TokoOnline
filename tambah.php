@@ -37,6 +37,9 @@
              <a href="admin.php">
                <button class="btn btn-primary">Lihat Admin</button>
             </a>
+             <a href="lihat_barang.php">
+               <button class="btn btn-primary">Lihat Barang Pemasok</button>
+            </a>
           <h1>Tambah Admin</h1>
           <form action="tambah_admin.php" method="POST" enctype="multipart/form-data">
             <label>Id Pemasok</label><br>
