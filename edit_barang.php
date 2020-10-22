@@ -34,7 +34,7 @@
             <input class="form-control col-sm-3" type="text" name="warna" value="<?= $row['warna'] ?>" >
 
           <button type="submit" class="btn btn-primary">save </button>
-          <a href="tampil_barang.php" class="btn btn-danger">Kembali</a>
+          <a href="tampil_barang_pemasok.php" class="btn btn-danger">Kembali</a>
       </form>
       </div>
   </div>
