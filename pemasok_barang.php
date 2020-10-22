@@ -23,8 +23,6 @@ if (!isset($_SESSION['id_pemasok'])){
           <form action="tambah_proses_barang.php" method="POST" enctype="multipart/form-data">
             <label>Nama</label><br>
             <input class="form-control col-sm-3" type="text" name="nama" placeholder="nama" >
-  <!--           <label>Stok</label><br>
-            <input class="form-control col-sm-3" type="text" name="stok" placeholder="Stok" >  -->
              <label>Harga</label><br>
             <input class="form-control col-sm-3" type="text" name="harga" placeholder="Harga" >
              <label>Ukuran</label><br>
