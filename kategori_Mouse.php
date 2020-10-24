@@ -132,11 +132,7 @@ BEFORE !! MOVE CATEGORY ADD CART FIRST</h2>
   </tbody>
 </table>
   </form>
-  <center>
-   <a href="invoice.php">
-    <button class="btn btn-primary">Bayar</button>
-   </a>
-</center>
+
 </section>
  
 
