@@ -75,8 +75,9 @@
         <div class="col-lg-8 text-center">
           <h2 class="text-white mt-0">We've got what you need!</h2>
           <hr class="divider light my-4">
-          <p class="text-white-50 mb-4">
-StartShop has everything you need to get your new items and not have to worry about wasting your time</p>
+         
+  <h2 class="text-white mt-0">
+BEFORE !! MOVE CATEGORY ADD CART FIRST</h2>
         </div>
       </div>
     </div>
