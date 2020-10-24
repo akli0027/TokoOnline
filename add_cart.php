@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Invoice</title>
+    <title>Cart</title>
     </html><link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -37,7 +37,7 @@
                         <div class="row">
                             <div class="col-xs-12">
                                 <h2 class="page-header">
-                                    <i class="fa fa-globe"></i> Toko Online
+                                    <i class="fa fa-globe"></i> Cart
                                       <?php date_default_timezone_set("Asia/Jakarta");  ?>
                                     <small class="pull-right"><?= date('m/d/Y h:i:s a');?></small>
                                 </h2>
@@ -102,9 +102,7 @@
                             <div class="col-md-12">
                                 <div class="table-responsive">
                                     <table class="table">
-                                        <tbody>
-                                            
-                                            
+                                        <tbody>                                               
                                             <tr>
                                                 <th>Total:</th>
                                                 <td><?=$totalsub?></td>
@@ -114,17 +112,10 @@
                                 </div>
                             </div><!-- /.col -->
                         </div><!-- /.row -->
-
-                        <!-- this row will not appear when printing -->
-                        <div class="row no-print">
-                            <div class="col-xs-12">
-                                <a href="print.php" target="_BLANK"class="btn btn-default"><i class="fa fa-print"></i> Print</a>
-                            </div>
-                        </div>
                         
                         <div class="row no-print">
                             <div class="col-xs-12">
-                                <a href="hapus_struk.php" class="btn btn-default"><i class="fa fa-print"></i>Kembali</a>
+                                <a href="home.php" class="btn btn-default"><i class="fa fa-print"></i>Kembali</a>
                             </div>
                         </div>
                     </section>
