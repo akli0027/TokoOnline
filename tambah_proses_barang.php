@@ -8,10 +8,13 @@ $merk= $_POST['merk'];
 $model= $_POST['model'];
 $diskon= $_POST['diskon'];
 $warna= $_POST['warna'];
+$id_pemasok = $_SESSION ['id_pemasok'];
+
 $gambar = $_FILES['gambar']['name']; 
 $file_tmp = $_FILES['gambar']['tmp_name'];
-$id_pemasok = $_SESSION ['id_pemasok'];
 move_uploaded_file($file_tmp,'img/'.$gambar);
+
+
    $query = mysqli_query($connect,"INSERT INTO barang VALUES (NULL,'$nama','$harga','$ukuran','$merk','$model','$diskon','$warna','$gambar','$id_pemasok')");
     
     if ($query) {

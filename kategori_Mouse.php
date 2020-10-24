@@ -41,7 +41,7 @@
             <a class="nav-link js-scroll-trigger" href="home.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#product">Product</a>
+            <a class="nav-link js-scroll-trigger" href="home.php">Product</a>
           </li>
 
 
@@ -83,9 +83,8 @@ StartShop has everything you need to get your new items and not have to worry ab
   </section>
 
   <!-- Product Section -->
-  
   <section id="product">
-    <form action="proses_invoice.php" method="POST">
+    <form action="proses_add_cart.php" method="POST">
      <table class="table table-hover">
   <thead>
     <tr>
@@ -99,13 +98,15 @@ StartShop has everything you need to get your new items and not have to worry ab
       <th scope="col">Discount</th>
       <th scope="col">Harga</th>
       <th scope="col">Pilih barang</th>
+      <th>
+       <button type="submit" class="btn btn-secondary" name="cart">add Cart</button>
+       </th>
     </tr>
     <?php
      include 'koneksi.php';
     $i=1;
     $j=0;
     $link = mysqli_query($connect,"select *from barang where model='mouse'");
-
     while ($tampung=mysqli_fetch_object($link)){
       ?>
   </thead>
@@ -129,12 +130,13 @@ StartShop has everything you need to get your new items and not have to worry ab
     ?>
   </tbody>
 </table>
-<center>
-    <button  type="submit" class="btn btn-primary" name="bayar">Bayar</button>
-</center>
-  </section>
   </form>
-
+  <center>
+   <a href="invoice.php">
+    <button class="btn btn-primary">Bayar</button>
+   </a>
+</center>
+</section>
  
 
   <!-- Footer -->
