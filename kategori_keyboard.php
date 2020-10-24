@@ -114,7 +114,7 @@ StartShop has everything you need to get your new items and not have to worry ab
   <tbody>
     <tr>
       <th scope="row"><?=$i++;?>.</th>
-      <td><img src="<?='img/'.$tampung->gambar?>" alt="Keyboard" width="100"></td>
+      <td><img src="<?='img/'.$tampung->gambar?>" alt="keyboard" width="100"></td>
       <td><?=$tampung->nama_barang?></td>
       <td><?=$tampung->merk?></td>
       <td><?=$tampung->ukuran?></td>
