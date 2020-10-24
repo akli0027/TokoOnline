@@ -64,37 +64,50 @@
 
                         <!-- Table row -->
                         <div class="row">
+                             <form action="hapus_cart.php" method="POST">
                             <div class="col-xs-12 table-responsive">
                                 <table class="table table-striped">
                                     <thead>
                                         <tr>
+                                            <th>No. </th>
                                             <th>Produk</th>
                                              <th>Harga</th>
                                              <th>Diskon</th>
                                             <th>Sub Total</th>
+                                             <th> 
+                                                  <button type="submit" class="btn btn-secondary" name="cart_delete">DELETE CART</button>
+                                            </th>
                                         </tr>
                                     </thead>
                                     <tbody> 
                                     <?php
+                                     $i=1;
                                     $totalsub=0;
                                    $link2 = mysqli_query($connect,"SELECT *FROM struk JOIN barang ON struk.kode_barang=barang.kode_barang JOIN pembeli ON struk.id_pembeli= pembeli.id_pembeli WHERE struk.id_pembeli='$id_pembeli'");
                             
+
                                     while($row2=mysqli_fetch_object($link2)){
                                         ?>
                                         <tr>
+                                            <th scope="row"><?=$i++;?>.</th>
                                             <td><?=$row2->nama_barang?></td>
                                             <td><?=$row2->harga?></td>
                                             <td><?=$row2->diskon?></td>
                                             <td><?=$totalbiaya=$row2->harga-$row2->diskon?></td>
+                                            <td>
+                                             <input type="checkbox" name="pilihan[]" value="<?=$row2->kode_barang;?>">
+                                        
+                                            </td>
                                         </tr>
                                         <?php
                                         $totalsub=$totalsub+$totalbiaya;
                                     }
                                     ?> 
 
-                                                                            </tbody>
+                                  </tbody>
                                 </table>
                             </div><!-- /.col -->
+                        </form>
                         </div><!-- /.row -->
 
                         <div class="row">
@@ -112,12 +125,15 @@
                                 </div>
                             </div><!-- /.col -->
                         </div><!-- /.row -->
-                        
-                        <div class="row no-print">
-                            <div class="col-xs-12">
-                                <a href="home.php" class="btn btn-default"><i class="fa fa-print"></i>Kembali</a>
-                            </div>
-                        </div>
-                    </section>
-                </section>
+
+            <div class="container-fluid">
+             <a href="home.php">
+               <button class="btn btn-secondary">kembali</button>
+            </a>
+            <a href="invoice.php">
+               <button class="btn btn-primary">Bayar</button>
+            </a>   
+              </div>         
+             </section>
+          </section>
 </body>

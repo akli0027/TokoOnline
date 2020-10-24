@@ -139,11 +139,6 @@ StartShop has everything you need to get your new items and not have to worry ab
   </tbody>
 </table>
   </form>
-  <center>
-   <a href="invoice.php">
-    <button class="btn btn-primary">Bayar</button>
-   </a>
-</center>
 </section>
 
  
