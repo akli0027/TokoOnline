@@ -132,7 +132,6 @@ BEFORE !! MOVE CATEGORY ADD CART FIRST</h2>
   </tbody>
 </table>
   </form>
-
 </section>
  
 
