@@ -107,14 +107,14 @@ StartShop has everything you need to get your new items and not have to worry ab
      include 'koneksi.php';
     $i=1;
     $j=0;
-    $link = mysqli_query($connect,"select *from barang");
+    $link = mysqli_query($connect,"select *from barang where model='speaker'");
     while ($tampung=mysqli_fetch_object($link)){
       ?>
   </thead>
   <tbody>
     <tr>
       <th scope="row"><?=$i++;?>.</th>
-      <td><img src="<?='img/'.$tampung->gambar?>" alt="data" width="100"></td>
+      <td><img src="<?='img/'.$tampung->gambar?>" alt="speaker" width="100"></td>
       <td><?=$tampung->nama_barang?></td>
       <td><?=$tampung->merk?></td>
       <td><?=$tampung->ukuran?></td>
