@@ -63,7 +63,7 @@
 					</div>
 
 					<div class="w-full text-center">
-						<a href="index.php" class="txt3">
+						<a href="login.php" class="txt3">
 							Login For Member
 						</a>
 					</div>

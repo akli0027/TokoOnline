@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,7 +20,7 @@
                         <h2 class="form-title">Sign up</h2>
                         <form method="POST" class="register-form" id="register-form" action="proses_register.php">
                              <div class="form-group">
-                                <input type="text" name="nama" placeholder="Your Name"/>
+                            <input type="text" name="nama" placeholder="Your Name"/>
                             </div>
                              <div class="form-group">
                                 <input type="text" name="no_telepon" placeholder="Number heandphone"/>
