@@ -1,6 +1,7 @@
+
 <?php
 session_start();
- include 'koneksi.php';
+include "koneksi.php";
 $email = $_POST['email'];
 $password = $_POST['password'];
 $query = mysqli_query($connect, "SELECT *FROM pembeli WHERE email='$email'");
@@ -12,12 +13,13 @@ $row= mysqli_fetch_object ($query);
 			header('location: home.php');
 		}
 		else {
-         header('location: index.php');
+         header('location: login.php?pesan=gagal');
       }
   
 	}
 	else {
-         header('location: index.php');
+         header('location: login.php?pesan=belum_login');
       }
 	
 ?>
+
