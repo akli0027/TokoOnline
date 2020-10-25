@@ -30,10 +30,10 @@
                          <?php
                           include "koneksi.php";
                           ?>
-                          </center>
+                         
                         <h2 class="form-title">Sign In</h2>
                         <form method="POST" class="register-form" id="login-form" action="proses_login.php">
-                              <center>
+                            
                               <?php
                               if (isset($_GET['pesan'])) {
                                 if ($_GET['pesan'] == "gagal") {
@@ -43,7 +43,7 @@
                                 }
                               }
                               ?>
-
+                           
                             <div class="form-group">
                                <label for="email"><i class="zmdi zmdi-email"></i></label>
                                 <input type="email" name="email" id="your_email" placeholder="Your Email"/>
