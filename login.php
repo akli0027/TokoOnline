@@ -1,10 +1,10 @@
     <!DOCTYPE html>
-<html lang="en">
-<head>
+    <html lang="en">
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>WELCOME</title>
+    <title>LOGIN</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="BOST/fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -19,6 +19,7 @@
             <div class="container">
                 <div class="signin-content">
                     <div class="signin-image">
+                        
                         <figure><img src="BOST/images/signin-image.jpg" alt="sing up image"></figure>
                         <a href="login_pemasok.php" class="signup-image-link">Login Pemasok</a>
                         <a href="login_admin.php" class="signup-image-link">Login  admin
@@ -26,7 +27,7 @@
                     </div>
 
                     <div class="signin-form">
-                        <h2 class="form-title">Sign up</h2>
+                        <h2 class="form-title">Sign In</h2>
                         <form method="POST" class="register-form" id="login-form" action="proses_login.php">
                             <div class="form-group">
                                <label for="email"><i class="zmdi zmdi-email"></i></label>
