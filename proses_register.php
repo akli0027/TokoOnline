@@ -8,6 +8,6 @@ $password = $_POST['password'];
 
 $query = mysqli_query($connect, "INSERT INTO pembeli VALUES (NULL,'$nama','$no_telepon','$alamat','$email','$password')");
 
-	header('location: index.php');
+	header('location: login.php');
 
 ?>
