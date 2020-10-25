@@ -22,28 +22,23 @@
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">Sign up</h2>
-                        <form method="POST" class="register-form" id="register-form"action="proses_register.php">
+                        <form method="POST" class="register-form" id="register-form" action="proses_register.php">
                             <div class="form-group">
-                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="nama" id="name" placeholder="Your Name"/>
+                                <input type="text" name="nama" placeholder="Your Name"/>
+                            </div>
+                             <div class="form-group">
+                                <input type="text" name="no_telepon" placeholder="Number heandphone"/>
                             </div>
                             <div class="form-group">
-                                <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                                <input type="text" name="alamat" placeholder="Addres"/>
                             </div>
                             <div class="form-group">
-                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="password" id="pass" placeholder="Password"/>
+                                <input type="email" name="email" placeholder="Your Email"/>
                             </div>
                             <div class="form-group">
-                                <label for="No heandphone"><i class="wrap-input100 validate-input"></i></label>
-                                <input type="text" name="no_telepon" id="no_telepon" placeholder="Number heandphone"/>
+                                <input type="password" name="password"  placeholder="Password"/>
                             </div>
-                            <div class="form-group">
-                                <label for="addres"><i class="Valid addres is required: ex@abc.xyz"></i></label>
-                                <input type="text" name="alamat" id="name" placeholder="Addres"/>
-                            </div>
-
+                           
                             <div class="form-group">
                                 <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
                                 <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
@@ -55,56 +50,11 @@
                     </div>
                     <div class="signup-image">
                         <figure><img src="BOST/images/signup-image.jpg" alt="sing up image"></figure>
-                        <a href="#" class="signup-image-link">I am already member</a>
+                        <a href="login.php" class="signup-image-link">I am already member</a>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Sing in  Form -->
-        <section class="sign-in">
-            <div class="container">
-                <div class="signin-content">
-                    <div class="signin-image">
-                        <figure><img src="BOST/images/signin-image.jpg" alt="sing up image"></figure>
-                        <a href="login_pemasok.php" class="signup-image-link">Login Pemasok</a>
-                        <a href="login_admin.php" class="signup-image-link">Login  admin
-                     </a>
-                    </div>
-                    
-                                
-
-                    <div class="signin-form">
-                        <h2 class="form-title">Sign up</h2>
-                        <form method="POST" class="register-form" id="login-form" action="proses_login.php">
-                            <div class="form-group">
-                               <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" name="email" id="your_email" placeholder="Your Email"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="password" id="your_pass" placeholder="Password"/>
-                            </div>
-                            <div class="form-group">
-                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
-                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
-                            </div>
-                            <div class="form-group form-button">
-                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
-                            </div>
-                        </form>
-                        <div class="social-login">
-                            <span class="social-label">Or login with</span>
-                            <ul class="socials">
-                                <li><a href="https://www.facebook.com/m.akli.9066"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
-                                <li><a href="https://twitter.com/AkliMuh"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </div>
 
     <!-- JS -->
