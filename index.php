@@ -22,7 +22,7 @@
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">Sign up</h2>
-                        <form method="POST" class="register-form" id="register-form"action="proses_register.php">
+                        <form method="POST" class="register-form" id="register-form" action="proses_register.php">
                              <div class="form-group">
                                 <input type="text" name="nama" placeholder="Your Name"/>
                             </div>
