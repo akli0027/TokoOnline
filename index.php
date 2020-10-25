@@ -1,153 +1,114 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WELCOME</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="BOST/fonts/material-icon/css/material-design-iconic-font.min.css">
 
-  <title>LOGIN</title>
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->  
-  <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->  
-  <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-
-  
-<!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->  
-  <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="css/util.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-
-
-  <!-- Font Awesome Icons -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-   <link rel="stylesheet" type="text/css" href="stylegambar.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-
-  <!-- Plugin CSS -->
-  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-  <!-- Theme CSS - Includes Bootstrap -->
-  <link href="css/creative.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-  <!--                    data batass css      -->
+    <!-- Main css -->
+    <link rel="stylesheet" href="BOST/css/style.css">
 </head>
-<body id="page-top">
-  <section id="data">
-   <div class="limiter">
-    <div id="runningtext">
-              <marquee behavior="scroll" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();" direction="left">
-              Selamat Datang di Website Jual Sperpart laptop Bekas
-              </marquee>
-          </div>
-    <div class="container-login100">
-      <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
-        <form class="login100-form validate-form" method="POST" action="proses_login.php">
-          <span class="login100-form-title p-b-33">
-            Login
-          </span>
+<body>
 
-          <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-            <input class="input100" type="text" name="email" placeholder="Email">
-            <span class="focus-input100-1"></span>
-            <span class="focus-input100-2"></span>
-          </div>
+    <div class="main">
 
-          <div class="wrap-input100 rs1 validate-input" data-validate="Password is required">
-            <input class="input100" type="password" name="password" placeholder="Password">
-            
-            <span class="focus-input100-1"></span>
-            <span class="focus-input100-2"></span>
-          </div>
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Sign up</h2>
+                        <form method="POST" class="register-form" id="register-form"action="proses_register.php">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="nama" id="name" placeholder="Your Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="password" id="pass" placeholder="Password"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="No heandphone"><i class="wrap-input100 validate-input"></i></label>
+                                <input type="text" name="no_telepon" id="no_telepon" placeholder="Number heandphone"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="addres"><i class="Valid addres is required: ex@abc.xyz"></i></label>
+                                <input type="text" name="alamat" id="name" placeholder="Addres"/>
+                            </div>
 
-          <div class="container-login100-form-btn m-t-20">
-            <button class="login100-form-btn">Login
-            </button>
-          </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="BOST/images/signup-image.jpg" alt="sing up image"></figure>
+                        <a href="#" class="signup-image-link">I am already member</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-          <div class="text-center">
-            <span class="txt1">
-              Create an account?
-            </span>
+        <!-- Sing in  Form -->
+        <section class="sign-in">
+            <div class="container">
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <figure><img src="BOST/images/signin-image.jpg" alt="sing up image"></figure>
+                        <a href="login_pemasok.php" class="signup-image-link">Login Pemasok</a>
+                        <a href="login_admin.php" class="signup-image-link">Login  admin
+                     </a>
+                    </div>
+                    
+                                
 
-            <a 
-              href="register.php" class="txt2 hov1">Sign up
-            </a>
-            
-          </div>
-        </form>
-          <center>
-          <a 
-            href="login_pemasok.php" class="txt2 hov1">Login for supplier
-          </a> <br>
-          <a 
-            href="login_admin.php" class="txt2 hov1">Login for admin
-          </a>
-          </center>
-      </div>
+                    <div class="signin-form">
+                        <h2 class="form-title">Sign up</h2>
+                        <form method="POST" class="register-form" id="login-form" action="proses_login.php">
+                            <div class="form-group">
+                               <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="your_email" placeholder="Your Email"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="password" id="your_pass" placeholder="Password"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
+                            </div>
+                        </form>
+                        <div class="social-login">
+                            <span class="social-label">Or login with</span>
+                            <ul class="socials">
+                                <li><a href="https://www.facebook.com/m.akli.9066"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/AkliMuh"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
-  </div>
-  
-  </section>
 
-
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Contact form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/agency.min.js"></script>
-
-  <!--===============================================================================================-->
-  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-  <script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-  <script src="vendor/bootstrap/js/popper.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-  <script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-  <script src="vendor/daterangepicker/moment.min.js"></script>
-  <script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-  <script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-  <script src="js/main.js"></script>
-
-
-</body>
-
+    <!-- JS -->
+    <script src="BOST/vendor/jquery/jquery.min.js"></script>
+    <script src="BOST/js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
