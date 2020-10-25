@@ -23,25 +23,20 @@
                     <div class="signup-form">
                         <h2 class="form-title">Sign up</h2>
                         <form method="POST" class="register-form" id="register-form"action="proses_register.php">
-                            <div class="form-group">
-                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="nama" id="name" placeholder="Your Name"/>
+                             <div class="form-group">
+                                <input type="text" name="nama" placeholder="Your Name"/>
+                            </div>
+                             <div class="form-group">
+                                <input type="text" name="no_telepon" placeholder="Number heandphone"/>
                             </div>
                             <div class="form-group">
-                                <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                                <input type="text" name="alamat" placeholder="Addres"/>
                             </div>
                             <div class="form-group">
-                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="password" id="pass" placeholder="Password"/>
+                                <input type="email" name="email" placeholder="Your Email"/>
                             </div>
                             <div class="form-group">
-                                <label for="No heandphone"><i class="wrap-input100 validate-input"></i></label>
-                                <input type="text" name="no_telepon" id="no_telepon" placeholder="Number heandphone"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="addres"><i class="Valid addres is required: ex@abc.xyz"></i></label>
-                                <input type="text" name="alamat" id="name" placeholder="Addres"/>
+                                <input type="password" name="password"  placeholder="Password"/>
                             </div>
 
                             <div class="form-group">
