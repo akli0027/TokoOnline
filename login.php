@@ -61,7 +61,7 @@
                             </div>
                         </form>
                         <div class="social-login">
-                            <span class="social-label">Or login with</span>
+                            <span class="social-label">Sing duwe</span>
                             <ul class="socials">
                                 <li><a href="https://www.facebook.com/m.akli.9066"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
                                 <li><a href="https://twitter.com/AkliMuh"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
